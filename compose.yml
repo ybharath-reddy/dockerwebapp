@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: bhrathreddy/flm-oct:db
+    image: bharathrdy/flm-oct:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: bhrathreddy/flm-oct:javaapp
+    image: bharathrdy/flm-oct:javaapp
     ports:
       - "1111:8080"
     deploy:
